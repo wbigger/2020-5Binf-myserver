@@ -15,7 +15,7 @@ app = Flask("marconi")
 # Definiamo una funzione con la parola chiave "def"
 # Anche in questo caso il tipo di ritorno della funzione viene inferito
 def hello():
-	return '<h1>ciao sono il prof Capobianco</h1>'
+	return '<h1>ciao sono il prof. Claudio Capobianco</h1>'
 
 
 # Notare che le righe in python non richiedono il ; alla fine
