@@ -2,6 +2,13 @@
 # Notare che possiamo usare la libreria flask perché l'abbiamo già installata con pip3
 from flask import Flask
 
+from amorosi import pagina as paginaAmorosi
+from gismondi import pagina as paginaGismondi
+from ciocci import pagina as paginaCiocci
+from moracchioli import pagina as paginaMoracchioli
+from stella import pagina as paginaStella
+from soriani import pagina as paginaSoriani
+
 # Istanzio l'oggetto della classe Flask
 # L'argomento è una qualsiasi stringa identificativa, nel nostro caso "marconi"
 # Notare che non dobbiamo dichiarare il tipo, perché viene "inferito" dal compilatore
@@ -17,6 +24,28 @@ app = Flask("marconi")
 def hello():
 	return '<h1>ciao sono il prof. Claudio Capobianco</h1>'
 
+@app.route('/amorosi')
+def amorosi():
+    return paginaAmorosi
 
+@app.route('/ciocci')
+def ciocci():
+    return paginaCiocci
+
+@app.route('/gismondi')
+def gismondi():
+    return paginaGismondi
+
+@app.route('/stella')
+def stella():
+    return paginaStella
+
+@app.route('/moracchioli')
+def moracchioli():
+    return paginaMoracchioli
+
+@app.route('/soriani')
+def soriani():
+    return paginaSoriani
 # Notare che le righe in python non richiedono il ; alla fine
 # Il contenuto delle funzioni deve essere indentato, perché non si usano le parentesi graffe
