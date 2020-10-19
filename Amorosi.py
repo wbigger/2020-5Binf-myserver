@@ -1,4 +1,4 @@
-pagina - """
+pagina = """
 <h1>Ciao sono Claudia</h1>
 I miei cibi preferiti:
 <ul>
